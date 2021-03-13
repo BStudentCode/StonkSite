@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Font Style */
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Header Style */
+.header{
+    padding: 10px;
+    text-align: center;
+    background: #e6e6e6;
+}
+/* Header Style */
+
+.header h1 {
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Nav Bar Active Style */
+
+.active {
+    background-color: #ff9900;
+}
+
+/* Nav Bar Style */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Nav Bar Style Links */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Nav Bar Change Colour on Hover Style */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column Style */
+.column {
+    display: flex;
+    flex-direction: column;
+    float: none;
+    width: 100%;
+}
+
+/* Article Style */
+.article {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+}
+
+.article img{
+    width: 75px;
+    height: 75px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* Clear floats after the columns */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer Style */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #f2f2f2;
+}

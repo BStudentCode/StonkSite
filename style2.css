@@ -1,0 +1,112 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    border-radius: 25px;
+    border: 2px solid rgb(228, 161, 255);
+    background-color: rgb(66, 66, 66);
+    padding: 25px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.box img {
+    width: 75px;
+    height: 75px;
+}
+
+.box h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.boxLogo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    gap: 15px;
+}
+
+.logoTwo {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    gap: 15px;
+}
+
+.boxLogo img {
+    width: 75px;
+    height: 75px;
+}
+
+.stonks {
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: row;
+}
+
+.currentStonks {
+    background-color: transparent;
+    color: greenyellow;
+    font-size: 35px;
+}
+
+.yourStonks {
+    background-color: transparent;
+    color: red;
+    font-size: 20px;
+}
+
+.add {
+    border: 2px solid rgb(148, 255, 148);
+    border-radius: 7px;
+    padding: 5px;
+    background-color: rgb(148, 255, 148);
+    text-align: center;
+    line-height: 1;
+}
+
+.add button {
+    color: white;
+    background-color: rgb(148, 255, 148);
+    border: 0px;
+    font-size: 15px;
+}
+
+.addContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.pageContainer {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 65%);
+    /*background-color: rgb(255, 174, 0);*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 25px;
+    flex: 1 0 auto;
+}
+
+.footer {
+    background-color: rgb(98, 98, 98);
+    text-align: center;
+    flex-shrink: 0;
+}
