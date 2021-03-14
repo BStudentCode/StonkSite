@@ -8,6 +8,60 @@ body {
     flex-direction: column;
 }
 
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    /*can click through modal as opacity is 0*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal-container.show {
+    /*an example of a class in CSS, can be added or removed with JS*/
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid gray;
+    border-radius: 7px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.modal p {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bolder;
+    color: rgb(137, 250, 147);
+}
+
+.modal h1 {
+    flex-basis: 100%;
+}
+
+.modal h2 {
+    flex-basis: 100%;
+}
+
 .box {
     border-radius: 25px;
     border: 2px solid rgb(228, 161, 255);
@@ -34,6 +88,7 @@ body {
     font-size: 30px;
     text-align: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .logoTwo {
@@ -42,6 +97,7 @@ body {
     font-size: 30px;
     text-align: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .boxLogo img {
@@ -50,9 +106,8 @@ body {
 }
 
 .stonks {
-    border: 2px solid gray;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .currentStonks {
@@ -103,10 +158,51 @@ body {
     color: white;
     font-size: 25px;
     flex: 1 0 auto;
+    border: 2px solid gray;
+    border-radius: 7px;
 }
 
 .footer {
     background-color: rgb(98, 98, 98);
     text-align: center;
     flex-shrink: 0;
+    border-radius: 7px;
+    padding-top: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        font-size: small;
+    }
+    .currentStonks {
+        font-size: 16px;
+    }
+    .yourStonks {
+        font-size: 16px;
+    }
+    .logoTwo {
+        font-size: large;
+        text-decoration: underline;
+    }
+    .logoTwo img {
+        width: 50px;
+        height: 50px;
+    }
+    .modal {
+        width: 250px;
+    }
+    .add {
+        border: 2px solid rgb(148, 255, 148);
+        border-radius: 4px;
+        padding: 2px;
+        background-color: rgb(148, 255, 148);
+        text-align: center;
+        line-height: 1;
+    }
+    .add button {
+        color: white;
+        background-color: rgb(148, 255, 148);
+        border: 0px;
+        font-size: 10px;
+    }
 }
